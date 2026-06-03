@@ -1,0 +1,18 @@
+[project]
+name = "micro-one"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.136.3",
+    "pyjwt>=2.13.0",
+]
+
+[tool.uv.workspace]
+members = [
+    "services/user-service",
+    "services/product-service",
+    "services/order-service",
+    "services/inventory-service",
+]
